@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block title %}Sign up{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+ <form>
+  <div class="container">
+    <p>Please fill in this form to create an account.</p>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+    <button class="button" type="submit" role="button">Log in</button>
+    <p id = "no_account">Already have an account?</p>
+    <p><a id = "signup_btn" href="signin.html">Sign in</a></p>
+  </div>
+ </form>
+
+{% endblock %}
